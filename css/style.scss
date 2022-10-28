@@ -1,0 +1,47 @@
+
+body{
+    background-color: black;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "a a a"
+    "b c c"
+    "b c c";
+    grid-template-columns: 0.5fr 1fr 2fr;
+    grid-template-rows: 0.2fr 1fr;
+    background-color: rgb(187, 248, 255);
+    margin: auto;
+}
+
+header{
+    grid-area: a;
+}
+
+aside{
+    grid-area: b;
+}
+
+section{
+    grid-area: c;
+}
+
+
+
+/*surfplatta*/
+@media screen and (min-width: 768px){
+    .container{
+        background-color: rgba(254, 244, 185, 0.737);
+    }
+    
+}
+
+
+/*laptop*/
+@media screen and (min-width: 1024px){
+    .container{
+        background-color: rgb(255, 185, 228);
+    }
+}
+    
